@@ -17,7 +17,7 @@
 		scrollingSpeed: 400,
 		css3: true,
 		resize: true,
-		anchors: ["page1","page2","page3","page4","page5","page6"],
+		anchors: ["page1","page2","page3","page4","page5","page6","page7"],
 		verticalCentered: false,
 		afterRender: function(){
 			$("#home").css({"display":"inline-block"}).addClass("home_zoom");
@@ -45,6 +45,9 @@
 			if(index==1){
 				$("aside a").eq(0).addClass("selected").siblings().removeClass("selected");
 			}
+			if(index==7){
+				$("aside a").eq(6).addClass("selected").siblings().removeClass("selected");
+			}
 			if(index==2){
 				$("aside a").eq(1).addClass("selected").siblings().removeClass("selected");
 				$("#about_content h1").after("<div class='title_en'><h2>· About me ·</h2></div>");
@@ -59,7 +62,7 @@
 							});
 						});
 					});
-				});	
+				});
 			}
 			if(index==3){
 				$("aside a").eq(2).addClass("selected").siblings().removeClass("selected");
@@ -123,8 +126,7 @@
 						});
 				},70);
 			}
-		},
-		onLeave:function(index , nextIndex, direction){
+		}, onLeave:function(index , nextIndex, direction){
 			if(index==2||index==3||index==4||index==5||index==6){
 				$(".title_en").remove();	
 			}
@@ -293,10 +295,6 @@ $(function() {
 	})
 
 })
-
-
-
-
 
 //内容适应居中
 		var size=function() {

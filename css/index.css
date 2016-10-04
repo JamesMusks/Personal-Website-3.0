@@ -236,7 +236,6 @@ aside b {
 	list-style: none;
 	width: 1304px;
 	height: 707px;
-	/*margin: 50px auto;*/
 	position: relative;
 }
 .breath_light li{
@@ -866,7 +865,7 @@ ul.major-icons li:hover{
 	margin-right: 40px;
 }
 .demoone h2{
-	left: 63px;
+	left: 125px;
 }
 .demotwo{
 	flex: 3;
