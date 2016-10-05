@@ -5,10 +5,12 @@ var gulp = require('gulp');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var cssnano=require('gulp-cssnano');
+var htmlmin=require('gulp-htmlmin');
+
 
 // 任务
-gulp.task('css',function(){
-  gulp.src(['css/index.css'])
-  .pipe(cssnano('index.css'))
+gulp.task('html',function(){
+  gulp.src(['index.html'])
+  .pipe(htmlmin())
   .pipe(gulp.dest('./dist'))
 });
